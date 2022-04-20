@@ -7,7 +7,7 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
 [RequireComponent(typeof(ARTrackedImageManager))]
-public class ImageTracking : MonoBehaviour
+public class ImageTracking : MonoBehaviour 
 {
     [SerializeField]
     private List<GameObject> placeablePrefabs;
@@ -23,6 +23,28 @@ public class ImageTracking : MonoBehaviour
         trackedImageManager = FindObjectOfType<ARTrackedImageManager>();
     }
 
+    private void Update()
+    {
+        //Check for mouse click 
+        if (Input.touchCount > 0 || Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            RaycastHit raycastHit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+            Debug.Log("<debug> If 1: " + Input.GetTouch(0).position);
+            Debug.Log("<debug> " + components.Find(c => c.Name == "Switch").ModelOff.transform.position);
+            if (Physics.Raycast(ray, out raycastHit))
+            {
+                Debug.Log("<debug> If 2");
+                if (raycastHit.transform != null)
+                {
+                    Debug.Log("<debug> If 3");
+                    //Our custom method. 
+                    Debug.Log("<debug> something has been pressed: " + raycastHit.transform.gameObject);
+                }
+            }
+        }
+    }
+
     private void SetupComponents()
     {
         components.Add(new CircuitComponent("Battery", placeablePrefabs[0], placeablePrefabs[0], Type.GivesPower));
@@ -32,6 +54,7 @@ public class ImageTracking : MonoBehaviour
         components.Add(new CircuitComponent("LED", placeablePrefabs[5], placeablePrefabs[6], Type.NeedPower));
         components.Add(new CircuitComponent("Motor", placeablePrefabs[7], placeablePrefabs[8], Type.NeedPower));
     }
+
 
     private void OnEnable()
     {
@@ -101,6 +124,7 @@ public class ImageTracking : MonoBehaviour
         if (trackedImage.trackingState == TrackingState.Tracking) 
         {
             Vector3 position = trackedImage.transform.position;
+
             Quaternion rotation = trackedImage.transform.rotation;
 
             components.Find(c => c.Name == componentName).SetActive();

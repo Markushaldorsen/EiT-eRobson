@@ -15,8 +15,6 @@ namespace Assets.Scripts
 
         private bool IsOn { get; set; } = false;
         
-        
-
         public CircuitComponent(string name, GameObject modelOn, GameObject modelOff, Type componentType)
         {
             Name = name;
@@ -43,7 +41,7 @@ namespace Assets.Scripts
                 return;
             }
 
-            Debug.Log("<debug> SetOn success, val: " + on);
+            // Debug.Log("<debug> SetOn success, val: " + on);
             IsOn = on;
             ModelOn.SetActive(on);
             ModelOff.SetActive(!on);
