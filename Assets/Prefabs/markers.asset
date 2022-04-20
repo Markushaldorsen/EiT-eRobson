@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: markers
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5346443332343728094
+  m_GuidHigh: 9167623433386997652
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5726226401378448467
+      m_GuidHigh: 4808797764310347184
+    m_SerializedTextureGuid:
+      m_GuidLow: 3811037675450577716
+      m_GuidHigh: 15737150714940653752
+    m_Size: {x: 0.05, y: 0.03847561}
+    m_SpecifySize: 1
+    m_Name: Battery
+    m_Texture: {fileID: 2800000, guid: f6dcb334869234e3b880d23c329765da, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4855581227156976671
+      m_GuidHigh: 10864581068720963993
+    m_SerializedTextureGuid:
+      m_GuidLow: 3768244312132169650
+      m_GuidHigh: 4955367587522418873
+    m_Size: {x: 0.05, y: 0.03173289}
+    m_SpecifySize: 1
+    m_Name: Dimmer
+    m_Texture: {fileID: 2800000, guid: a3862fb27e3c344bb918c2f19000c544, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4626453884411211347
+      m_GuidHigh: 3765861323817477770
+    m_SerializedTextureGuid:
+      m_GuidLow: 3807067587460023511
+      m_GuidHigh: 4310343595890545448
+    m_Size: {x: 0.05, y: 0.040714286}
+    m_SpecifySize: 1
+    m_Name: LED
+    m_Texture: {fileID: 2800000, guid: d27544d76bcc34d52893efcca96ad13b, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5174318103924318018
+      m_GuidHigh: 9956635372346619791
+    m_SerializedTextureGuid:
+      m_GuidLow: 9548115356812291395
+      m_GuidHigh: 6324611039897519946
+    m_Size: {x: 0.05, y: 0.03847561}
+    m_SpecifySize: 1
+    m_Name: Motor
+    m_Texture: {fileID: 2800000, guid: 353fad43b85484814a079b473b88c557, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5075157428521239328
+      m_GuidHigh: 1013039364739732099
+    m_SerializedTextureGuid:
+      m_GuidLow: 2655870055674157537
+      m_GuidHigh: 15845928703175660889
+    m_Size: {x: 0.05, y: 0.05}
+    m_SpecifySize: 1
+    m_Name: USB
+    m_Texture: {fileID: 2800000, guid: 860e19e18bbe24db5995f340330ce8db, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5236357253169687429
+      m_GuidHigh: 10280104288253342879
+    m_SerializedTextureGuid:
+      m_GuidLow: 8427995664059576931
+      m_GuidHigh: 2452528724484653561
+    m_Size: {x: 0.05, y: 0.022708334}
+    m_SpecifySize: 1
+    m_Name: Switch
+    m_Texture: {fileID: 2800000, guid: 2ccdb263416774f6f9815980e1210922, type: 3}

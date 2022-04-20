@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 276597d93f74b4ce799c030800ad5e57
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ImageManager: {instanceID: 0}
+  - m_ImageLibrary: {fileID: 11400000, guid: ca028a51d1d8a4641b7658eaa2ae0c07, type: 2}
+  - m_OnePrefab: {fileID: 6181163405791503737, guid: a1197efedaccc4b4bab8c93e89c0253d,
+      type: 3}
+  - m_TwoPrefab: {fileID: 3920027693441679757, guid: ede796a78a8774435a8f18804f4af069,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
